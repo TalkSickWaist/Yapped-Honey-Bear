@@ -383,8 +383,8 @@ namespace Yapped
 
         private void ImportNamesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            bool replace = MessageBox.Show("If a row already has a name, would you like to skip it?\r\n" +
-                "Click Yes to skip existing names.\r\nClick No to replace existing names.",
+            bool replace = MessageBox.Show("If a row already has a name, would you like to overwrite it?\r\n" +
+                "Click Yes to replace existing names.\r\nClick No to skip existing names.",
                 "Importing Names", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
 
             string namesDir = $@"{GetResRoot()}\Names";
